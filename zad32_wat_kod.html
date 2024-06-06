@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+ <html>
+<head>
+  <script type="text/javascript">
+    function router(firma_r, model_r, kolor_r) {
+      this.firma = firma_r;
+      this.model = model_r;
+      this.kolor = kolor_r;
+    }
+
+    router.prototype.wypisz = function () {
+      alert(this.firma + ' ' + this.model + ' ' + this.kolor);
+    };
+
+    var router1 = new router("tp-link", "Archer A8", "czarny");
+    var router2 = new router('xiaomi', 'rb01', 'czarny');
+
+    router1.wypisz();
+    router2.wypisz();
+
+    document.write("Router pierwszy" + " " + router1.firma + " " + router1.model + " " + router1.kolor);
+    document.write("Router drugi" + " " + router2.firma + " " + router2.model + " " + router2.kolor);
+  </script>
+</head>
+<body>
+  <br>
+  Programowanie obiektowe
+</body>
+</html>
+
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript">
+ function okno_zamknij_siejka()
+ {
+ window.close()
+ }
+ </script>
+</head>
+<body>
+ <form>
+ <textarea name="siejka" cols="80" rows="20" readonly>
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Obliczanie silni w sposób iteracyjny</title>
+</head>
+<body>
+  <h1>Obliczanie silni w sposób iteracyjny</h1>
+  <input id="n_wat" type="number" value="6">
+  <button onclick="calculateFactorial()">Oblicz silnie</button>
+  <p id="result"></p>
+
+  <script>
+    function calculateFactorial() {
+      let n_wat = document.getElementById("n_wat").value;
+      let silnia_wat = 1;
+
+      if (n_wat == 0) {
+        silnia_wat = 1;
+      } else {
+        for (let i = 1; i <= n_wat; i++) {
+          silnia_wat *= i;
+        }
+      }
+
+      document.getElementById("result").innerHTML = `${n_wat}! = ${silnia_wat}`;
+    }
+  </script>
+</body>
+</html>
+ </textarea>
+</form>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_siejka()"/>
+<script type="text/javascript">
+</script>
+</body>
+</html>
